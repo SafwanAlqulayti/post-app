@@ -1,0 +1,20 @@
+<div>
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" *ngFor="let Post of Posts">
+
+    <ngb-panel title={{Post.title}}>
+        <input type="hidden" id="Id" name="custId" value={{Post.Id}}>
+
+        <ng-template ngbPanelContent>
+            {{Post.body}}
+            <!-- <p></p>
+                <ngb-rating [(rate)]="currentRate"></ngb-rating>
+                <hr>
+                <pre>Rate: <b>{{currentRate}}</b></pre> -->
+<a [routerLink]="['/posts' , Post.id]" href="">Read More</a>
+        </ng-template>
+
+     </ngb-panel>
+</ngb-accordion>
+ 
+</div>
+ 

@@ -1,0 +1,10 @@
+*{
+    width: 100%;
+}
+div{
+    width: 80%;
+margin: auto;}
+div > * {
+    padding: 30px;
+    text-align: center;
+}
